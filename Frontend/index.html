@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Heart Disease Predictor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Prediction</h1>
+        <form id="heartForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+            <label for="cp">Chest Pain Type:</label>
+            <select id="cp" name="cp">
+                <option value="0">Typical Angina</option>
+                <option value="1">Atypical Angina</option>
+                <option value="2">Non-anginal Pain</option>
+                <option value="3">Asymptomatic</option>
+            </select>
+
+            <label for="trestbps">Resting Blood Pressure (mm Hg):</label>
+            <input type="number" id="trestbps" name="trestbps" required>
+
+            <label for="chol">Cholesterol (mg/dL):</label>
+            <input type="number" id="chol" name="chol" required>
+
+            <label for="fbs">Fasting Blood Sugar > 120 mg/dL:</label>
+            <select id="fbs" name="fbs">
+                <option value="1">True</option>
+                <option value="0">False</option>
+            </select>
+
+            <label for="restecg">Resting ECG Results:</label>
+            <select id="restecg" name="restecg">
+                <option value="0">Normal</option>
+                <option value="1">ST-T Wave Abnormality</option>
+                <option value="2">Probable/Definite LV Hypertrophy</option>
+            </select>
+
+            <label for="thalach">Maximum Heart Rate Achieved:</label>
+            <input type="number" id="thalach" name="thalach" required>
+
+            <label for="exang">Exercise Induced Angina:</label>
+            <select id="exang" name="exang">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="oldpeak">ST Depression Induced by Exercise:</label>
+            <input type="number" id="oldpeak" name="oldpeak" step="0.1" required>
+
+            <label for="slope">Slope of Peak Exercise ST Segment:</label>
+            <select id="slope" name="slope">
+                <option value="0">Upsloping</option>
+                <option value="1">Flat</option>
+                <option value="2">Downsloping</option>
+            </select>
+
+            <label for="ca">Number of Major Vessels Colored by Fluoroscopy:</label>
+            <input type="number" id="ca" name="ca" min="0" max="4" required>
+
+            <label for="thal">Thalassemia:</label>
+            <select id="thal" name="thal">
+                <option value="0">Normal</option>
+                <option value="1">Fixed Defect</option>
+                <option value="2">Reversible Defect</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
